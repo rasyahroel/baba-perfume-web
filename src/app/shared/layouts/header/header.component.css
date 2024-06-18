@@ -1,0 +1,128 @@
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 50px 50px;
+    box-shadow: -0.3rem 0 1rem rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 105px;
+    /* Height of the navbar */
+}
+
+.left-section,
+.center-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.center-section {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Navbar brand */
+
+.navbar-brand img {
+    max-width: 131px;
+}
+
+
+/* Navbar nav */
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.nav-item {
+    margin: 0 10px;
+    height: 100%;
+}
+
+.center-section .nav-item {
+    margin: 0 10px;
+    height: 100%;
+    width: 90px;
+}
+
+.nav-link {
+    /* font-weight: bold; */
+    color: #442204;
+    text-decoration: none;
+    padding: 0 10px;
+    height: 90%;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center text and icons vertically */
+}
+
+.nav-item .active {
+    color: #A66702;
+    margin-top: -2px;
+    border-top: 13px solid #A66702;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.active-bold {
+    color: #664422;
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: #664422;
+}
+
+.nav-link img {
+    width: 32px;
+}
+
+
+/* Dummy content styles */
+
+.content {
+    margin-top: 120px;
+    /* Ensure content starts below navbar */
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 1500px;
+    /* Example height */
+}
