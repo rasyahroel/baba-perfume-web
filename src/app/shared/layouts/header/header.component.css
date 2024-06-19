@@ -82,7 +82,6 @@
 }
 
 .nav-link {
-    /* font-weight: bold; */
     color: #442204;
     text-decoration: none;
     padding: 0 10px;
@@ -94,12 +93,16 @@
     /* Center text and icons vertically */
 }
 
-.nav-item .active {
-    color: #A66702;
+.nav-item .indicator {
     margin-top: -2px;
-    border-top: 13px solid #A66702;
+    border-top: 13px solid transparent;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+    transition: border-top-color 0.3s;
+}
+
+.nav-item .indicator.active {
+    border-top-color: #A66702;
 }
 
 .active-bold {
