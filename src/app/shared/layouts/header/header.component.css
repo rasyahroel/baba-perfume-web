@@ -48,6 +48,7 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    height: 100%;
 }
 
 
@@ -81,6 +82,11 @@
     width: 90px;
 }
 
+.right-section .nav-item {
+    margin: 0 10px;
+    height: 100%;
+}
+
 .nav-link {
     color: #442204;
     text-decoration: none;
@@ -107,6 +113,12 @@
 
 .active-bold {
     color: #664422;
+    font-weight: bolder;
+}
+
+.active-bg {
+    border-radius: 50%;
+    background-color: #FEC700;
     font-weight: bolder;
 }
 

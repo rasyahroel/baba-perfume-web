@@ -89,17 +89,17 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="assets/icons/MagnifyingGlass.png" alt="Search here">
+                            <img src="assets/icons/MagnifyingGlass.png" alt="Search here" [class.active-bg]="isLinkActive('')">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="assets/icons/Handbag.png" alt="Your Cart">
+                            <img src="assets/icons/Handbag.png" alt="Your Cart" [class.active-bg]="isLinkActive('')">
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/my-profile">
-                            <img src="assets/icons/User.png" alt="See my Profile">
+                            <img src="assets/icons/User.png" alt="See my Profile" [class.active-bg]="isLinkActive('/my-profile')">
                         </a>
                     </li>
                 </ul>

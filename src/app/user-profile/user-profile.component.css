@@ -1,0 +1,81 @@
+/* Hero */
+
+.hero {
+    padding: 100px 210px;
+    font-family: Satoshi;
+    position: relative;
+}
+
+.hero .backdrop {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 120%;
+    background: radial-gradient(circle, #FFF2B2, transparent);
+    z-index: -1;
+    filter: blur(16rem);
+    background-clip: padding-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+.text-section {
+    width: 719px;
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4A4A4A;
+    margin: 20px 0;
+}
+
+.sub-heading {
+    font-size: 24px;
+    font-weight: lighter;
+    color: #4A4A4A;
+    margin: 20px 0;
+}
+
+
+/* TabView */
+
+
+/* Menghilangkan border di sekitar nav */
+
+::ng-deep .p-tabview-nav {
+    border: none;
+    background-color: transparent;
+}
+
+::ng-deep .p-tabview-nav .p-highlight .p-tabview-nav-link {
+    color: #4A4A4A !important;
+    border: none !important;
+    border-bottom: 20px solid #A66702 !important;
+    font-weight: bold !important;
+}
+
+::ng-deep .p-tabview-nav .p-tabview-nav-link {
+    color: #4A4A4A !important;
+    font-weight: normal !important;
+}
+
+::ng-deep .p-tabview-nav .p-tabview-nav-link:hover {
+    color: #4A4A4A !important;
+    font-weight: bold !important;
+}
+
+::ng-deep .p-tabview-nav .p-highlight {
+    background-color: transparent !important;
+}
+
+::ng-deep .p-tabview-nav .p-tabview-nav-link {
+    border-bottom: none !important;
+}
